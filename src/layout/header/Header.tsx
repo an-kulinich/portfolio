@@ -1,51 +1,36 @@
 import styled from "styled-components";
+import {Container} from "../../components/Container";
+import {FlexWrapper} from "../../components/FlexWrapper";
+import {HeaderMenu} from "./headerMenu/HeaderMenu";
+
+const headerMenuItems = [
+    'Home',
+    'About',
+    'Services'
+]
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo>Logo</Logo>
-            <Menu>
-                <MenuItem>
-                    <MenuLink>
-                        Home
-                    </MenuLink>
-                </MenuItem>
-                <MenuItem>
-                    <MenuLink>
-                        About
-                    </MenuLink>
-                </MenuItem>
-                <MenuItem>
-                    <MenuLink>
-                        Services
-                    </MenuLink>
-                </MenuItem>
-            </Menu>
-            <ContactButton>Contact me</ContactButton>
+            <Container>
+                <FlexWrapper justify="space-between" align={"center"}>
+                    <Logo>Logo</Logo>
+                    <HeaderMenu headerMenuItems={headerMenuItems}/>
+                    <ContactButton>Contact me</ContactButton>
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-    
+    width: 100%;
 `
 
 const Logo = styled.span`
     
 `
 
-const Menu = styled.ul`
-    
-`
-
-const MenuItem = styled.li`
-    
-`
-
-const MenuLink = styled.a`
-    
-`
-
 const ContactButton = styled.button`
-    
+
 `
