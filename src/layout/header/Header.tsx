@@ -27,7 +27,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-
+    
 `
 
 const Logo = styled.span`
@@ -35,7 +35,7 @@ const Logo = styled.span`
 `
 
 const Menu = styled.ul`
-
+    
 `
 
 const MenuItem = styled.li`
@@ -43,7 +43,7 @@ const MenuItem = styled.li`
 `
 
 const MenuLink = styled.a`
-
+    
 `
 
 const ContactButton = styled.button`
