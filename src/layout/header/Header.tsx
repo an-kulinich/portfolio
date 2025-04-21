@@ -21,13 +21,13 @@ export const Header = () => {
                     </MenuLink>
                 </MenuItem>
             </Menu>
-            <ContactButton></ContactButton>
+            <ContactButton>Contact me</ContactButton>
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-    
+
 `
 
 const Logo = styled.span`
@@ -35,7 +35,7 @@ const Logo = styled.span`
 `
 
 const Menu = styled.ul`
-    
+
 `
 
 const MenuItem = styled.li`
