@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 
 export const HeaderMenu = (props: { headerMenuItems: Array<string> }) => {
     return (
