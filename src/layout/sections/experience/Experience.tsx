@@ -27,7 +27,7 @@ const StyledExperience = styled.section`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
 `
 
 const YearText = styled.p`

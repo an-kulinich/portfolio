@@ -6,6 +6,7 @@ import {Skills} from "./layout/sections/skills/Skills";
 import {Experience} from "./layout/sections/experience/Experience";
 import {Slider} from "./layout/sections/slider/Slider";
 import {Subscribe} from "./layout/sections/subscribe/Subscribe";
+import {Footer} from "./layout/footer/Footer";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                 <Experience/>
                 <Slider/>
                 <Subscribe/>
+                <Footer/>
             </Container>
         </div>
     );

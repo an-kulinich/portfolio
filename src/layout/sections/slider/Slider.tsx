@@ -15,6 +15,6 @@ export const Slider = () => {
 const StyledSlider = styled.section`
     display: flex;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
 `
 

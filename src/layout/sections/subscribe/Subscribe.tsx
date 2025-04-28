@@ -32,7 +32,10 @@ export const Subscribe = () => {
 
 const StyledSubscribe = styled.section`
     width: 100%;
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #9dd3d5;
 `
 
