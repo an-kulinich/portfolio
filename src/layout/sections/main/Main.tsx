@@ -3,10 +3,11 @@ import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import Avatar from "./../../../assets/img/photo.jpg"
 
+
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper>
+            <Container>
                 <FlexWrapper direction={"column"} justify={"center"}>
                     <Name>
                         Hello!
@@ -25,14 +26,22 @@ export const Main = () => {
                         </DownloadBtn>
                     </FlexWrapper>
                 </FlexWrapper>
-                <Photo src={Avatar} alt="Photo"/>
-            </FlexWrapper>
+            </Container>
         </StyledMain>
     );
 };
 
 const StyledMain = styled.section`
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 744px;
+    background-color: #222A36F2;
+    background-image: url(${Avatar});
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: 100% 50%;
 `
 
 const Name = styled.span`

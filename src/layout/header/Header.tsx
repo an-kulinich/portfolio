@@ -12,11 +12,13 @@ const headerMenuItems = [
 export const Header = () => {
     return (
         <StyledHeader>
-            <FlexWrapper justify="space-between" align={"center"}>
-                <Logo>Logo</Logo>
-                <HeaderMenu headerMenuItems={headerMenuItems}/>
-                <ContactButton>Contact me</ContactButton>
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper justify="space-between" align={"center"}>
+                    <Logo>Logo</Logo>
+                    <HeaderMenu headerMenuItems={headerMenuItems}/>
+                    <ContactButton>Contact me</ContactButton>
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     );
 };

@@ -16,6 +16,7 @@ const StyledFooter = styled.footer`
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+    background-color: #000000;
 `
 
 const FooterLink = styled.a`

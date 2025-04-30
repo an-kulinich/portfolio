@@ -1,20 +1,29 @@
 import styled from "styled-components";
 import {Slide} from "./slide/Slide";
 import {WorkResult} from "./workResult/WorkResult";
+import {Container} from "../../../components/Container";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 
 export const Slider = () => {
     return (
         <StyledSlider>
-            <Slide/>
-            <WorkResult/>
+            <Container>
+                <FlexWrapper>
+                    <Slide/>
+                    <WorkResult/>
+                </FlexWrapper>
+            </Container>
         </StyledSlider>
     );
 };
 
 const StyledSlider = styled.section`
-    display: flex;
     width: 100%;
-    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222A36F2;
 `
 
