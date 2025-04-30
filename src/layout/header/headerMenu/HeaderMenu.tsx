@@ -20,7 +20,6 @@ const StyledHeaderMenu = styled.ul`
     width: 50%;
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
 `
 
 const MenuItem = styled.li`
