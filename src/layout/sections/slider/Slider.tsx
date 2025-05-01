@@ -9,7 +9,7 @@ export const Slider = () => {
     return (
         <StyledSlider>
             <Container>
-                <FlexWrapper>
+                <FlexWrapper justify="space-between">
                     <Slide/>
                     <WorkResult/>
                 </FlexWrapper>

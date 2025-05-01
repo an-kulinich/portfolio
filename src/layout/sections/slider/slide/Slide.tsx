@@ -7,7 +7,7 @@ export const Slide = () => {
     return (
         <StyledSlide>
             <SlidePhoto src={sliderImg1}/>
-            <FlexWrapper direction="column">
+            <FlexWrapper direction="column" padding={"10px"}>
                 <DoubleQuotes>“</DoubleQuotes>
                 <SlideText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
@@ -15,12 +15,12 @@ export const Slide = () => {
                     ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
                     Class aptent taciti sociosqu ad litora torquent
                 </SlideText>
-                <FlexWrapper>
+                <FlexWrapper padding={"10px"}>
                     <SlideLinkLeft>
                         <Icon iconId={"arrowLeft"} width={"40"} height={"40"} viewBox={"0 0 40 40"}/>
                     </SlideLinkLeft>
                     <SlideLinkRight>
-                        <Icon iconId={"arrowRight"} width={"54"} height={"54"} viewBox={"0 0 40 40"}/>
+                        <Icon iconId={"arrowRight"} width={"53"} height={"53"} viewBox={"0 0 40 40"}/>
                     </SlideLinkRight>
                 </FlexWrapper>
             </FlexWrapper>
@@ -30,6 +30,9 @@ export const Slide = () => {
 
 const StyledSlide = styled.div`
     display: flex;
+    width: 894px;
+    max-width: 894px;
+    min-height: 394px;
 `
 
 const SlidePhoto = styled.img`
@@ -39,7 +42,7 @@ const SlidePhoto = styled.img`
 `
 
 const DoubleQuotes = styled.span`
-    font-family: Playfair Display, sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-weight: 700;
     font-size: 100px;
     line-height: 120%;
@@ -53,6 +56,7 @@ const SlideText = styled.p`
 
 const SlideLinkLeft = styled.a`
     display: inline-block;
+    padding: 10px;
     :hover {
         cursor: pointer;
     }
@@ -60,6 +64,7 @@ const SlideLinkLeft = styled.a`
 
 const SlideLinkRight = styled.a`
     display: inline-block;
+    padding: 10px;
     :hover {
         cursor: pointer;
     }

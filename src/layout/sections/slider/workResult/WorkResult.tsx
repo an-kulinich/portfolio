@@ -33,6 +33,9 @@ export const WorkResult = () => {
 };
 
 const StyledWorkResult = styled.div`
+    width: 194px;
+    max-width: 194px;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
 `

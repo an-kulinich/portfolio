@@ -10,6 +10,7 @@ type FlexWrapperPropsType = {
     maxWidth?: string;
     height?: string;
     minHeight?: string;
+    padding?: string;
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -23,5 +24,6 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     max-width: ${props => props.maxWidth};
     height: ${props => props.height};
     min-height: ${props => props.minHeight};
-    border: 1px, solid, #c545d5;
+    padding: ${props => props.padding};
+    border: 1px, solid, greenyellow;
 `
