@@ -20,7 +20,7 @@ export const Slide = () => {
                         <Icon iconId={"arrowLeft"} width={"40"} height={"40"} viewBox={"0 0 40 40"}/>
                     </SlideLinkLeft>
                     <SlideLinkRight>
-                        <Icon iconId={"arrowRight"} width={"53"} height={"53"} viewBox={"0 0 40 40"}/>
+                        <Icon iconId={"arrowRight"} width={"40"} height={"40"} viewBox={"0 0 40 40"}/>
                     </SlideLinkRight>
                 </FlexWrapper>
             </FlexWrapper>
