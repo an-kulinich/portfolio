@@ -25,6 +25,10 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     width: 100%;
+    min-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 const Logo = styled.span`

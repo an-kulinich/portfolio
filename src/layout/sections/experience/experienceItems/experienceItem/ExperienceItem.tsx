@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Icon} from "../../../../components/Icon/Icon";
+import {Icon} from "../../../../../components/Icon/Icon";
 
 type ExperienceItemPropsType = {
     iconId: string;
@@ -20,11 +20,9 @@ const StyledExperienceItem = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     width: 288px;
-    min-height: 300px;
+    min-height: 295px;
     padding: 20px;
-    margin: 5px;
-    border: 1px solid greenyellow;
-    box-sizing: border-box;
+    background-color: #C4C4C4;
 `
 
 const Text = styled.span`

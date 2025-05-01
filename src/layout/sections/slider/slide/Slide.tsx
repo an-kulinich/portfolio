@@ -16,8 +16,12 @@ export const Slide = () => {
                     Class aptent taciti sociosqu ad litora torquent
                 </SlideText>
                 <FlexWrapper>
-                    <Icon iconId={"arrowLeft"} width={"40"} height={"40"} viewBox={"0 0 40 40"}/>
-                    <Icon iconId={"arrowRight"} width={"54"} height={"54"} viewBox={"0 0 40 40"}/>
+                    <SlideLinkLeft>
+                        <Icon iconId={"arrowLeft"} width={"40"} height={"40"} viewBox={"0 0 40 40"}/>
+                    </SlideLinkLeft>
+                    <SlideLinkRight>
+                        <Icon iconId={"arrowRight"} width={"54"} height={"54"} viewBox={"0 0 40 40"}/>
+                    </SlideLinkRight>
                 </FlexWrapper>
             </FlexWrapper>
         </StyledSlide>
@@ -45,4 +49,18 @@ const DoubleQuotes = styled.span`
 
 const SlideText = styled.p`
     
+`
+
+const SlideLinkLeft = styled.a`
+    display: inline-block;
+    :hover {
+        cursor: pointer;
+    }
+`
+
+const SlideLinkRight = styled.a`
+    display: inline-block;
+    :hover {
+        cursor: pointer;
+    }
 `
