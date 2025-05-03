@@ -17,13 +17,17 @@ export const HeaderMenu = (props: { headerMenuItems: Array<string> }) => {
 };
 
 const StyledHeaderMenu = styled.ul`
-    width: 50%;
+    width: 350px;
+    max-width: 350px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 `
 
 const MenuItem = styled.li`
-
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
 `
 
 const MenuLink = styled.a`

@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const SubscribeForm = () => {
     return (
-            <StyledSubscribeForm>
-                <StyledLabel>Your name:</StyledLabel>
-                <StyledInput/>
-                <StyledLabel>Your email  address:</StyledLabel>
-                <StyledInput/>
-                <StyledLabel>Tell about the project:</StyledLabel>
-                <StyledInput/>
-                <SubscribeButton>Send</SubscribeButton>
-            </StyledSubscribeForm>
+        <StyledSubscribeForm>
+            <StyledLabel>Your name:</StyledLabel>
+            <StyledInput/>
+            <StyledLabel>Your email address:</StyledLabel>
+            <StyledInput/>
+            <StyledLabel>Tell about the project:</StyledLabel>
+            <StyledInput/>
+            <SubscribeButton>Send</SubscribeButton>
+        </StyledSubscribeForm>
     );
 };
 

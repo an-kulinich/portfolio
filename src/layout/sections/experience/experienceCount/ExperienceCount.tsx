@@ -17,9 +17,14 @@ const StyledExperienceCount = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 `
 
 const YearText = styled.p`
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 180%;
+    letter-spacing: 0%;
 
 `

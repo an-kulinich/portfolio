@@ -23,9 +23,15 @@ const StyledExperienceItems = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 `
 
 const ExperienceTitle = styled.h2`
     width: 100%;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 180%;
+    letter-spacing: 0%;
     text-align: center;
+
 `

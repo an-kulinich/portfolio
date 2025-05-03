@@ -7,7 +7,7 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-between"}>
+                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
                     <Icon iconId={"figma"}/>
                     <Icon iconId={"html"}/>
                     <Icon iconId={"css"}/>

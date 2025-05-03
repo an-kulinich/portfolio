@@ -20,11 +20,21 @@ const StyledExperienceItem = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     width: 288px;
+    max-width: 288px;
     min-height: 295px;
     padding: 20px;
     background-color: #C4C4C4;
+    gap: 5px;
+    :hover {
+        cursor: pointer;
+        background-color: #676CDB;
+    }
 `
 
 const Text = styled.span`
-    
+    max-width: 110px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
 `

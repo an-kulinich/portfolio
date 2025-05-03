@@ -29,12 +29,29 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 `
 
 const Logo = styled.span`
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
 
 `
 
 const ContactButton = styled.button`
+    width: 158px;
+    max-width: 158px;
+    min-height: 50px;
+    background-color: #676CDB;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
 
 `
