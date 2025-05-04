@@ -9,8 +9,8 @@ type ExperienceItemPropsType = {
 export const ExperienceItem = (props: ExperienceItemPropsType) => {
     return (
         <StyledExperienceItem>
-                            <Icon iconId={"computer"} width={"30"} height={"30"} viewBox={"0 0 30 30"}/>
-                            <Text>{props.experienceText}</Text>
+            <Icon iconId={props.iconId} width={"30"} height={"30"} viewBox={"0 0 30 30"}/>
+            <Text>{props.experienceText}</Text>
         </StyledExperienceItem>
     );
 };
@@ -25,9 +25,14 @@ const StyledExperienceItem = styled.div`
     padding: 20px;
     background-color: #C4C4C4;
     gap: 5px;
-    :hover {
+
+    &:hover {
         cursor: pointer;
         background-color: #676CDB;
+
+        span {
+            color: white;
+        }
     }
 `
 
@@ -37,4 +42,5 @@ const Text = styled.span`
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0%;
+    color: #222A36;
 `

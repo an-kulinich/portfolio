@@ -25,4 +25,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     height: ${props => props.height};
     min-height: ${props => props.minHeight};
     padding: ${props => props.padding};
+    width: 100%;
 `

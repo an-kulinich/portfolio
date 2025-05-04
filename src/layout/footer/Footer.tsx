@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FooterLink>Created by Zarror | All Reserved!</FooterLink>
+            <FooterLink>Created by <a href={"#"}>Zarror</a> | All Reserved!</FooterLink>
         </StyledFooter>
     );
 };
@@ -20,5 +20,13 @@ const StyledFooter = styled.footer`
 `
 
 const FooterLink = styled.a`
-
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.3px;
+    color: #a6a6a6;
+    a {
+        font-weight: 700;
+        color: white;
+    }
 `

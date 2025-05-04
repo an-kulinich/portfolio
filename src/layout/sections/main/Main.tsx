@@ -15,7 +15,7 @@ export const Main = () => {
                     </Name>
                     <FlexWrapper direction={"column"} width={"404px"} maxWidth={"404px"} minHeight={"202px"} gap={"30px"}>
                         <Description>
-                            I’am freelance web developer based in Indonesia who loves to craft attractive design
+                            I’am freelance <span>web developer</span> based in Indonesia who loves to craft attractive design
                             experiences for the web.
                         </Description>
                         <FlexWrapper>
@@ -60,7 +60,11 @@ const Description = styled.p`
     font-size: 20px;
     line-height: 180%;
     letter-spacing: 0%;
-
+    color: #a6a6a6;
+    
+    span {
+        color: white;
+    }
 `
 
 const EmailBtn = styled.button`

@@ -8,13 +8,23 @@ export const SubscribeIconsBlock = () => {
             <ConnectText>
                 Let’s Connect
             </ConnectText>
-            <FlexWrapper justify={"space-between"} width="325px" maxWidth={"325px"}>
-                <Icon iconId={"dribble"} width="25" height="25" viewBox="0 0 25 25"/>
-                <Icon iconId={"upwork2"} width="25" height="25" viewBox="0 0 25 25"/>
-                <Icon iconId={"youtube"} width="25" height="25" viewBox="0 0 25 25"/>
-                <Icon iconId={"linkedin"} width="25" height="25" viewBox="0 0 25 25"/>
-                <Icon iconId={"github"} width="25" height="25" viewBox="0 0 25 25"/>
-            </FlexWrapper>
+            <IconWrapper>
+                <SocialLink>
+                    <Icon iconId={"dribble"} width="25" height="25" viewBox="0 0 25 25"/>
+                </SocialLink>
+                <SocialLink>
+                    <Icon iconId={"upwork2"} width="25" height="25" viewBox="0 0 25 25"/>
+                </SocialLink>
+                <SocialLink>
+                    <Icon iconId={"youtube"} width="25" height="25" viewBox="0 0 25 25"/>
+                </SocialLink>
+                <SocialLink>
+                    <Icon iconId={"linkedin"} width="25" height="25" viewBox="0 0 25 25"/>
+                </SocialLink>
+                <SocialLink>
+                    <Icon iconId={"github"} width="25" height="25" viewBox="0 0 25 25"/>
+                </SocialLink>
+            </IconWrapper>
         </StyledSubscribeIconsBlock>
     );
 };
@@ -30,5 +40,19 @@ const ConnectText = styled.span`
     font-size: 100px;
     line-height: 120%;
     letter-spacing: 0%;
+`
+
+const IconWrapper = styled.div`
+    width: 325px;
+    display: flex;
+    justify-content: space-between;
+    
+`
+
+const SocialLink = styled.a`
+    &:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
 `
 

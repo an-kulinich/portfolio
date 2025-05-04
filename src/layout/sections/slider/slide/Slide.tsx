@@ -51,7 +51,10 @@ const DoubleQuotes = styled.span`
 `
 
 const SlideText = styled.p`
-    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0%;
 `
 
 const SlideLinkLeft = styled.a`
