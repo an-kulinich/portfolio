@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Icon} from "../../../../components/Icon/Icon";
 
 export const SubscribeForm = () => {
     return (
@@ -9,7 +10,10 @@ export const SubscribeForm = () => {
             <StyledInput/>
             <StyledLabel>Tell about the project:</StyledLabel>
             <StyledInput/>
-            <SubscribeButton>Send</SubscribeButton>
+            <SubscribeButton>
+                Send
+                <Icon iconId={"subscribeArrow"} width={"25px"} height={"25px"} viewBox={"0 0 25 25"}/>
+            </SubscribeButton>
         </StyledSubscribeForm>
     );
 };
@@ -43,5 +47,15 @@ const StyledInput = styled.input`
 `
 
 const SubscribeButton = styled.button`
-    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #676CDB;
+    
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-4px);
+    }
+
 `

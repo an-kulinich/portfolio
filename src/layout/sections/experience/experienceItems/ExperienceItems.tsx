@@ -6,11 +6,11 @@ export const ExperienceItems = () => {
     return (
         <StyledExperienceItems>
             <ExperienceTitle>Developer and Designer, specialized in UI/UX and Web Developer</ExperienceTitle>
-            <FlexWrapper align={"flex-end"} wrap={"wrap"} gap={"15px"}>
+            <ExperienceItemWparrer>
                 <ExperienceItem iconId={"computer"} experienceText={"Front End Developer"}/>
                 <ExperienceItem iconId={"paint"} experienceText={"UI/UX Designer"}/>
                 <ExperienceItem iconId={"thunder"} experienceText={"Branding Designer"}/>
-            </FlexWrapper>
+            </ExperienceItemWparrer>
         </StyledExperienceItems>
     );
 };
@@ -34,4 +34,11 @@ const ExperienceTitle = styled.h2`
     letter-spacing: 0%;
     text-align: center;
 
+`
+
+const ExperienceItemWparrer = styled.div`
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
 `

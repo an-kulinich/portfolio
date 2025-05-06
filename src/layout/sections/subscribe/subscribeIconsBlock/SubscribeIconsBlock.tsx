@@ -1,27 +1,26 @@
 import styled from "styled-components";
-import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Icon} from "../../../../components/Icon/Icon";
 
 export const SubscribeIconsBlock = () => {
     return (
         <StyledSubscribeIconsBlock>
             <ConnectText>
-                Let’s Connect
+                Let’s Connects
             </ConnectText>
             <IconWrapper>
-                <SocialLink>
+                <SocialLink href={"#"}>
                     <Icon iconId={"dribble"} width="25" height="25" viewBox="0 0 25 25"/>
                 </SocialLink>
-                <SocialLink>
+                <SocialLink href={"#"}>
                     <Icon iconId={"upwork2"} width="25" height="25" viewBox="0 0 25 25"/>
                 </SocialLink>
-                <SocialLink>
+                <SocialLink href={"#"}>
                     <Icon iconId={"youtube"} width="25" height="25" viewBox="0 0 25 25"/>
                 </SocialLink>
-                <SocialLink>
+                <SocialLink href={"#"}>
                     <Icon iconId={"linkedin"} width="25" height="25" viewBox="0 0 25 25"/>
                 </SocialLink>
-                <SocialLink>
+                <SocialLink href={"#"}>
                     <Icon iconId={"github"} width="25" height="25" viewBox="0 0 25 25"/>
                 </SocialLink>
             </IconWrapper>

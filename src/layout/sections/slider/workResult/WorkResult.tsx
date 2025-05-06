@@ -38,10 +38,15 @@ const StyledWorkResult = styled.div`
     min-height: 450px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 `
 
 const WorkResultText = styled.span`
-
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0%;
 `
 
 const WorkResultNumber = styled.span`

@@ -7,7 +7,7 @@ export const Slide = () => {
     return (
         <StyledSlide>
             <SlidePhoto src={sliderImg1}/>
-            <FlexWrapper direction="column" padding={"10px"}>
+            <SlideWrapper>
                 <DoubleQuotes>“</DoubleQuotes>
                 <SlideText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
@@ -15,15 +15,15 @@ export const Slide = () => {
                     ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
                     Class aptent taciti sociosqu ad litora torquent
                 </SlideText>
-                <FlexWrapper padding={"10px"}>
+                <LinkWrapper>
                     <SlideLinkLeft>
                         <Icon iconId={"arrowLeft"} width={"40"} height={"40"} viewBox={"0 0 40 40"}/>
                     </SlideLinkLeft>
                     <SlideLinkRight>
                         <Icon iconId={"arrowRight"} width={"40"} height={"40"} viewBox={"0 0 40 40"}/>
                     </SlideLinkRight>
-                </FlexWrapper>
-            </FlexWrapper>
+                </LinkWrapper>
+            </SlideWrapper>
         </StyledSlide>
     );
 };
@@ -71,4 +71,15 @@ const SlideLinkRight = styled.a`
     :hover {
         cursor: pointer;
     }
+`
+
+const SlideWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+`
+
+const LinkWrapper = styled.div`
+    display: flex;
+    padding: 10px;
 `
