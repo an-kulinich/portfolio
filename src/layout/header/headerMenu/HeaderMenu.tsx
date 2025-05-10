@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Theme} from "../../../styles/Theme";
 
 export const HeaderMenu = (props: { headerMenuItems: Array<string> }) => {
     return (
@@ -21,6 +22,10 @@ const StyledHeaderMenu = styled.ul`
     max-width: 350px;
     display: flex;
     justify-content: space-between;
+
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
 `
 
 const MenuItem = styled.li`

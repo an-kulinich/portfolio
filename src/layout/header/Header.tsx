@@ -3,8 +3,9 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {Theme} from "../../styles/Theme";
+import {MobileMenu} from "./mobileMenu/MobileMenu";
 
-const headerMenuItems = [
+const Items = [
     'Home',
     'About',
     'Services'
@@ -16,7 +17,8 @@ export const Header = () => {
             <Container>
                 <FlexWrapper justify="space-between" align={"center"}>
                     <Logo>Logo</Logo>
-                    <HeaderMenu headerMenuItems={headerMenuItems}/>
+                    <HeaderMenu headerMenuItems={Items}/>
+                    <MobileMenu headerMenuItems={Items}/>
                     <ContactButton>Contact me</ContactButton>
                 </FlexWrapper>
             </Container>
@@ -34,6 +36,11 @@ const StyledHeader = styled.header`
     top: 0;
     left: 0;
     right: 0;
+    background-color: rgba(196, 196, 196, 0.3);
+
+    @media ${Theme.media.tablet} {
+        background-color: rgba(196, 196, 196, 0);
+    }
 `
 
 const Logo = styled.span`
@@ -42,6 +49,9 @@ const Logo = styled.span`
     line-height: 100%;
     letter-spacing: 0%;
 
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
 `
 
 const ContactButton = styled.button`
@@ -55,4 +65,7 @@ const ContactButton = styled.button`
     letter-spacing: 0%;
     color: ${Theme.colors.font};
 
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
 `
