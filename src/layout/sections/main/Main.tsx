@@ -3,6 +3,7 @@ import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import Avatar from "./../../../assets/img/photo.jpg"
 import {Icon} from "../../../components/Icon/Icon";
+import {Theme} from "../../../styles/Theme";
 
 
 export const Main = () => {
@@ -42,7 +43,7 @@ const StyledMain = styled.section`
     align-items: center;
     width: 100%;
     min-height: 744px;
-    background-color: #222A36F2;
+    background-color: ${Theme.colors.primaryBg};
     background-image: url(${Avatar});
     background-repeat: no-repeat;
     background-size: 50% auto;
@@ -75,7 +76,7 @@ const DescriptionText = styled.p`
     color: #a6a6a6;
     
     span {
-        color: white;
+        color: ${Theme.colors.font};
     }
 `
 
@@ -87,8 +88,8 @@ const EmailBtn = styled.button`
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0%;
-    color: white;
-    background-color: #676CDB;
+    color: ${Theme.colors.font};
+    background-color: ${Theme.colors.accent};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +106,7 @@ const DownloadBtn = styled.button`
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0%;
-    color: white;
+    color: ${Theme.colors.font};
     text-decoration: underline 1px solid white;
     display: flex;
     justify-content: center;

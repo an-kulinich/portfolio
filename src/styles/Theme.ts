@@ -5,5 +5,10 @@ export const Theme = {
         thirdBg: '#222A36',
         accent: '#676CDB',
         font: '#FFFFFF'
+    },
+
+    media: {
+        tablet: "media screen and (max-width: 768px)",
+        mobile: "media screen and (max-width: 576px)",
     }
 }

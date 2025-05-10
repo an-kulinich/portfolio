@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
+import {Theme} from "../../styles/Theme";
 
 const headerMenuItems = [
     'Home',
@@ -47,11 +48,11 @@ const ContactButton = styled.button`
     width: 158px;
     max-width: 158px;
     min-height: 50px;
-    background-color: #676CDB;
+    background-color: ${Theme.colors.accent};
     font-weight: 500;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: white;
+    color: ${Theme.colors.font};
 
 `

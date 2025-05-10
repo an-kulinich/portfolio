@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Icon} from "../../../../../components/Icon/Icon";
+import {Theme} from "../../../../../styles/Theme";
 
 type ExperienceItemPropsType = {
     iconId: string;
@@ -28,10 +29,10 @@ const StyledExperienceItem = styled.div`
 
     &:hover {
         cursor: pointer;
-        background-color: #676CDB;
+        background-color: ${Theme.colors.accent};
 
         span {
-            color: white;
+            color: ${Theme.colors.font};
         }
     }
 `
@@ -42,5 +43,5 @@ const Text = styled.span`
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0%;
-    color: #222A36;
+    color: ${Theme.colors.thirdBg};
 `

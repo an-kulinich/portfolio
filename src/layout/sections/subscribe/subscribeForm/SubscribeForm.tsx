@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Icon} from "../../../../components/Icon/Icon";
+import {Theme} from "../../../../styles/Theme";
 
 export const SubscribeForm = () => {
     return (
@@ -41,7 +42,7 @@ const StyledInput = styled.input`
     border: none;
     border-bottom: 1px solid white;
     background-color: unset;
-    color: white;
+    color: ${Theme.colors.font};
     min-height: 30px;
     font-size: 16px;
 `
@@ -51,7 +52,7 @@ const SubscribeButton = styled.button`
     font-size: 30px;
     line-height: 120%;
     letter-spacing: 0%;
-    color: #676CDB;
+    color: ${Theme.colors.accent};
     
     &:hover {
         cursor: pointer;

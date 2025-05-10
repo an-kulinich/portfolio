@@ -3,6 +3,7 @@ import {Slide} from "./slide/Slide";
 import {WorkResult} from "./workResult/WorkResult";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Theme} from "../../../styles/Theme";
 
 
 export const Slider = () => {
@@ -24,6 +25,6 @@ const StyledSlider = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #222A36F2;
+    background-color: ${Theme.colors.primaryBg};
 `
 

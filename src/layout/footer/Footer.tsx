@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme";
 
 export const Footer = () => {
     return (
@@ -16,7 +17,7 @@ const StyledFooter = styled.footer`
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: ${Theme.colors.secondaryBg};
 `
 
 const FooterLink = styled.a`
@@ -27,6 +28,6 @@ const FooterLink = styled.a`
     color: #a6a6a6;
     a {
         font-weight: 700;
-        color: white;
+        color: ${Theme.colors.font};
     }
 `

@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {SubscribeForm} from "./subscribeForm/SubscribeForm";
 import {SubscribeIconsBlock} from "./subscribeIconsBlock/SubscribeIconsBlock";
+import {Theme} from "../../../styles/Theme";
 
 export const Subscribe = () => {
     return (
@@ -23,7 +24,7 @@ const StyledSubscribe = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-color: ${Theme.colors.secondaryBg};
 `
 
 

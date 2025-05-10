@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Icon} from "../../../components/Icon/Icon";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
@@ -25,5 +26,5 @@ const StyledSkills = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: ${Theme.colors.secondaryBg};
 `

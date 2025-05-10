@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {ExperienceCount} from "./experienceCount/ExperienceCount";
 import {ExperienceItems} from "./experienceItems/ExperienceItems";
+import {Theme} from "../../../styles/Theme";
 
 export const Experience = () => {
     return (
@@ -23,6 +24,6 @@ const StyledExperience = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #222A36;
+    background-color: ${Theme.colors.thirdBg};
 `
 
