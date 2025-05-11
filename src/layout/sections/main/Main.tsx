@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import Avatar from "./../../../assets/img/photo.jpg"
 import {Icon} from "../../../components/Icon/Icon";
 import {Theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 
 export const Main = () => {
@@ -42,21 +43,21 @@ const StyledMain = styled.section`
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    min-height: 744px;
     background-color: ${Theme.colors.primaryBg};
     background-image: url(${Avatar});
     background-repeat: no-repeat;
     background-size: 50% auto;
     background-position: 100% 50%;
+    padding-top: 185px;
+    padding-bottom: 135px;
+    
+    @media ${Theme.media.mobile} {
+        background-position: top center;
+    }
 `
 
 const Name = styled.span`
-    font-family: "Playfair Display";
-    font-weight: 700;
-    font-size: 90px;
-    line-height: 120%;
-    letter-spacing: 0%;
-
+    ${font({family: "'Playfair Display', sans serif", weight: 700, lineHeight: 120, Fmax: 90, Fmin: 50})};
 `
 
 const DescriptionWrapper = styled.div`
@@ -69,10 +70,7 @@ const DescriptionWrapper = styled.div`
 `
 
 const DescriptionText = styled.p`
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 180%;
-    letter-spacing: 0%;
+    ${font({family: "'Poppins', sans serif", weight: 400, lineHeight: 180, Fmax: 20, Fmin: 16})};
     color: #a6a6a6;
     
     span {
@@ -84,10 +82,7 @@ const EmailBtn = styled.button`
     width: 200px;
     max-width: 200px;
     min-height: 64px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0%;
+    ${font({family: "'Poppins', sans serif", weight: 400, lineHeight: 180, Fmax: 20, Fmin: 16})};
     color: ${Theme.colors.font};
     background-color: ${Theme.colors.accent};
     display: flex;
@@ -102,10 +97,7 @@ const DownloadBtn = styled.button`
     width: 200px;
     max-width: 200px;
     min-height: 64px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0%;
+    ${font({family: "'Poppins', sans serif", weight: 400, lineHeight: 180, Fmax: 20, Fmin: 16})};
     color: ${Theme.colors.font};
     text-decoration: underline 1px solid white;
     display: flex;

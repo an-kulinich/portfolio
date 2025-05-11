@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import sliderImg1 from "./../../../../assets/img/sliderImg1.jpg";
-import {FlexWrapper} from "./../../../../components/FlexWrapper";
 import {Icon} from "../../../../components/Icon/Icon";
+import {Theme} from "../../../../styles/Theme";
 
 export const Slide = () => {
     return (
@@ -30,13 +30,16 @@ export const Slide = () => {
 
 const StyledSlide = styled.div`
     display: flex;
-    width: 894px;
+    width: 100%;
     max-width: 894px;
-    min-height: 394px;
+    
+    @media ${Theme.media.tablet} {
+        flex-direction: column;
+    }
 `
 
 const SlidePhoto = styled.img`
-    width: 390px;
+    max-width: 390px;
     height: 390px;
     object-fit: cover;
 `
@@ -46,15 +49,12 @@ const DoubleQuotes = styled.span`
     font-weight: 700;
     font-size: 100px;
     line-height: 120%;
-    letter-spacing: 0%;
-
 `
 
 const SlideText = styled.p`
     font-weight: 700;
     font-size: 20px;
     line-height: 180%;
-    letter-spacing: 0%;
 `
 
 const SlideLinkLeft = styled.a`

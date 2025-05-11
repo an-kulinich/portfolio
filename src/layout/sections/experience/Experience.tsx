@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {ExperienceCount} from "./experienceCount/ExperienceCount";
 import {ExperienceItems} from "./experienceItems/ExperienceItems";
@@ -9,10 +8,10 @@ export const Experience = () => {
     return (
         <StyledExperience>
             <Container>
-                <FlexWrapper justify="space-between">
+                <ExperienceWrapper>
                     <ExperienceCount/>
                     <ExperienceItems/>
-                </FlexWrapper>
+                </ExperienceWrapper>
             </Container>
         </StyledExperience>
     );
@@ -20,10 +19,19 @@ export const Experience = () => {
 
 const StyledExperience = styled.section`
     width: 100%;
-    min-height: 660px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: ${Theme.colors.thirdBg};
+`
+
+const ExperienceWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    
+    @media ${Theme.media.tablet} {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 

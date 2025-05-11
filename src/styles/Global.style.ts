@@ -20,6 +20,10 @@ export const GlobalStyle = createGlobalStyle`
         color: ${Theme.colors.font};
     }
     
+    section {
+        padding: 100px 0px;
+    }
+    
     a {
         text-decoration: none;
     }

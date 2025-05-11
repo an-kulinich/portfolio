@@ -8,5 +8,5 @@ export const BigNumber = styled.span`
     font-size: 100px;
     line-height: 120%;
     letter-spacing: 0%;
-    
+    white-space: nowrap;
 `

@@ -20,11 +20,19 @@ export const Subscribe = () => {
 
 const StyledSubscribe = styled.section`
     width: 100%;
-    min-height: 730px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: ${Theme.colors.secondaryBg};
+    
+    
+    @media ${Theme.media.tablet} {
+        ${FlexWrapper} {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+    }
 `
 
 

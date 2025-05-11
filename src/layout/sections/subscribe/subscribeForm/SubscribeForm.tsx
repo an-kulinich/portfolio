@@ -20,13 +20,12 @@ export const SubscribeForm = () => {
 };
 
 const StyledSubscribeForm = styled.form`
-    width: 500px;
+    width: 100%;
     max-width: 500px;
-    min-height: 444px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 45px;
 `
 
 const StyledLabel = styled.label`
@@ -34,7 +33,6 @@ const StyledLabel = styled.label`
     font-weight: 500;
     font-size: 30px;
     line-height: 120%;
-    letter-spacing: 0%;
 `
 
 const StyledInput = styled.input`

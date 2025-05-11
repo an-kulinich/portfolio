@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {ExperienceItem} from "./experienceItem/ExperienceItem";
+import {Theme} from "../../../../styles/Theme";
+import {font} from "../../../../styles/Common";
 
 export const ExperienceItems = () => {
     return (
@@ -16,24 +17,23 @@ export const ExperienceItems = () => {
 };
 
 const StyledExperienceItems = styled.div`
-    width: 894px;
+    width: 100%;
     max-width: 894px;
-    min-height: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+
+    @media ${Theme.media.tablet} {
+        
+    }
 `
 
 const ExperienceTitle = styled.h2`
     width: 100%;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 180%;
-    letter-spacing: 0%;
     text-align: center;
-
+    ${font({weight: 700, lineHeight: 180, Fmax: 40, Fmin: 24})};
 `
 
 const ExperienceItemWparrer = styled.div`
@@ -41,4 +41,9 @@ const ExperienceItemWparrer = styled.div`
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 15px;
+
+    @media ${Theme.media.tablet} {
+        flex-direction: column;
+    }
+    
 `

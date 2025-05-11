@@ -21,8 +21,8 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
+    padding: 30px 0px;
     width: 100%;
-    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;

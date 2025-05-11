@@ -10,7 +10,7 @@ export const WorkResult = () => {
             </WorkResultText>
 
             <WorkResultNumber as={BigNumber} >
-                100%
+                100 %
             </WorkResultNumber>
 
             <WorkResultText>
@@ -18,7 +18,7 @@ export const WorkResult = () => {
             </WorkResultText>
 
             <WorkResultNumber as={BigNumber} >
-                +80
+                + 80
             </WorkResultNumber>
 
             <WorkResultText>
@@ -33,12 +33,11 @@ export const WorkResult = () => {
 };
 
 const StyledWorkResult = styled.div`
-    width: 194px;
+    width: 100%;
     max-width: 194px;
-    min-height: 450px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 `
 
 const WorkResultText = styled.span`
@@ -46,13 +45,10 @@ const WorkResultText = styled.span`
     font-weight: 700;
     font-size: 30px;
     line-height: 120%;
-    letter-spacing: 0%;
 `
 
 const WorkResultNumber = styled.span`
     font-weight: 700;
     font-size: 50px;
     line-height: 120%;
-    letter-spacing: 0%;
-
 `

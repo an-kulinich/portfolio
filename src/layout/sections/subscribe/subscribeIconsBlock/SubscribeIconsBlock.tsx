@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import {Icon} from "../../../../components/Icon/Icon";
+import {font} from "../../../../styles/Common";
 
 export const SubscribeIconsBlock = () => {
     return (
         <StyledSubscribeIconsBlock>
             <ConnectText>
-                Let’s Connects
+                Let’s Connect
             </ConnectText>
             <IconWrapper>
                 <SocialLink href={"#"}>
@@ -29,20 +30,20 @@ export const SubscribeIconsBlock = () => {
 };
 
 const StyledSubscribeIconsBlock = styled.div`
-    width: 438px;
-    max-width: 438px;
-    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 40px;
 `
 
 const ConnectText = styled.span`
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 120%;
-    letter-spacing: 0%;
+    ${font({weight: 700, lineHeight: 120, Fmax: 100, Fmin: 50})};
 `
 
 const IconWrapper = styled.div`
-    width: 325px;
+    width: 100%;
+    max-width: 325px;
     display: flex;
     justify-content: space-between;
     
