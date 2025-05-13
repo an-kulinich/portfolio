@@ -23,7 +23,7 @@ const StyledExperienceItems = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 40px;
 
     @media ${Theme.media.tablet} {
         

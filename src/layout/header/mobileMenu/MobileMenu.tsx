@@ -4,6 +4,8 @@ import {Theme} from "../../../styles/Theme";
 export const MobileMenu = (props: { headerMenuItems: Array<string> }) => {
     return (
         <StyledMobileMenu>
+            <Logo>Logo</Logo>
+
             <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
@@ -35,14 +37,31 @@ const StyledMobileMenu = styled.nav`
     }
 `
 
+const Logo = styled.span`
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 9999999;
+    
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
+`
+
 const BurgerButton = styled.button<{ isOpen: boolean }>`
 
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     top: 25px;
     right: 25px;
     z-index: 9999999;
+    background-color: #2D3540;
+    border-radius: 10px;
 
     span {
         display: block;
@@ -50,8 +69,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
         height: 4px;
         background-color: ${Theme.colors.font};
         position: absolute;
-        top: 15px;
-        right: 15px;
+        top: 22px;
+        right: 8px;
 
         ${props => props.isOpen && css<{ isOpen: boolean }>`
             background-color: rgba(255, 255, 255, 0);
@@ -113,6 +132,7 @@ const Popup = styled.div<{ isOpen: boolean }>`
         align-items: center;
         flex-direction: column;
     }
+    
 `
 
 const MenuItem = styled.li`
@@ -131,7 +151,7 @@ const MenuLink = styled.a`
 `
 
 const ContactButton = styled.button`
-    width: 158px;
+    width: 100%;
     max-width: 158px;
     min-height: 50px;
     background-color: ${Theme.colors.accent};

@@ -18,7 +18,7 @@ export const HeaderMenu = (props: { headerMenuItems: Array<string> }) => {
 };
 
 const StyledHeaderMenu = styled.ul`
-    width: 350px;
+    width: 100%;
     max-width: 350px;
     display: flex;
     justify-content: space-between;

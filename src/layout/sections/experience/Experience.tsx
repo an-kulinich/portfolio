@@ -32,6 +32,7 @@ const ExperienceWrapper = styled.div`
     @media ${Theme.media.tablet} {
         flex-direction: column;
         align-items: center;
+        gap: 40px;
     }
 `
 

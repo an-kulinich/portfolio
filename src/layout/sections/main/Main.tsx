@@ -52,7 +52,10 @@ const StyledMain = styled.section`
     padding-bottom: 135px;
     
     @media ${Theme.media.mobile} {
-        background-position: top center;
+        background-position: 100% -20%;
+        background-size: 100% auto;
+        min-height: 970px;
+        align-items: flex-end;
     }
 `
 
@@ -63,7 +66,7 @@ const Name = styled.span`
 const DescriptionWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    width: 404px;
+    width: 100%;
     max-width: 404px;
     min-height: 202px;
     gap: 30px;

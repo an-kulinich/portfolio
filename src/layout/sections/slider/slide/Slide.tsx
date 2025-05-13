@@ -8,7 +8,7 @@ export const Slide = () => {
         <StyledSlide>
             <SlidePhoto src={sliderImg1}/>
             <SlideWrapper>
-                <DoubleQuotes>“</DoubleQuotes>
+                <Icon iconId={"dubbleQuotes"} width={"40"} height={"40"} viewBox={"0 0 40 40"}/>
                 <SlideText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
                     est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus,
@@ -33,22 +33,19 @@ const StyledSlide = styled.div`
     width: 100%;
     max-width: 894px;
     
-    @media ${Theme.media.tablet} {
+    @media screen and (max-width: 920px) {
         flex-direction: column;
     }
 `
 
 const SlidePhoto = styled.img`
     max-width: 390px;
-    height: 390px;
+    height: 392px;
     object-fit: cover;
-`
-
-const DoubleQuotes = styled.span`
-    font-family: "Playfair Display", sans-serif;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 120%;
+    
+    @media ${Theme.media.tablet} {
+        margin-bottom: 10px;
+    }
 `
 
 const SlideText = styled.p`
@@ -77,6 +74,10 @@ const SlideWrapper = styled.div`
     display: flex;
     flex-direction: column;
     padding: 10px;
+    
+    @media ${Theme.media.tablet} {
+        padding: 0px;
+    }
 `
 
 const LinkWrapper = styled.div`

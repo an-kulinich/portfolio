@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {Icon} from "../../../../components/Icon/Icon";
 import {Theme} from "../../../../styles/Theme";
+import {font} from "../../../../styles/Common";
 
 export const SubscribeForm = () => {
     return (
@@ -29,10 +30,7 @@ const StyledSubscribeForm = styled.form`
 `
 
 const StyledLabel = styled.label`
-    font-family: "Poppins";
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 120%;
+    ${font({weight: 500, lineHeight: 120, Fmax: 30, Fmin: 22})};
 `
 
 const StyledInput = styled.input`

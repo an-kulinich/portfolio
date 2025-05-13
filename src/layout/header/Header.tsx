@@ -47,7 +47,6 @@ const Logo = styled.span`
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
-    letter-spacing: 0%;
 
     @media ${Theme.media.tablet} {
         display: none;

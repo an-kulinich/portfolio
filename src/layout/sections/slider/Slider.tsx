@@ -29,8 +29,8 @@ const SliderWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     
-    // @media ${Theme.media.tablet} {
-    //     flex-direction: column;
-    // }
+    @media ${Theme.media.mobile} {
+        flex-direction: column;
+    }
 `
 

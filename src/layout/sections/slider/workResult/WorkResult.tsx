@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {BigNumber} from "../../../../components/number/BigNumber";
+import {Theme} from "../../../../styles/Theme";
 
 export const WorkResult = () => {
     return (
@@ -38,6 +39,10 @@ const StyledWorkResult = styled.div`
     display: flex;
     flex-direction: column;
     gap: 30px;
+    
+    @media ${Theme.media.tablet} {
+        padding-left: 10px;
+    }
 `
 
 const WorkResultText = styled.span`
