@@ -23,6 +23,11 @@ const StyledExperience = styled.section`
     justify-content: center;
     align-items: center;
     background-color: ${Theme.colors.thirdBg};
+    
+    @media ${Theme.media.tablet} {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
 `
 
 const ExperienceWrapper = styled.div`

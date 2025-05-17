@@ -46,7 +46,7 @@ const IconWrapper = styled.div`
     max-width: 325px;
     display: flex;
     justify-content: space-between;
-    
+    padding-bottom: 20px;
 `
 
 const SocialLink = styled.a`

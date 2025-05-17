@@ -37,6 +37,7 @@ const ExperienceTitle = styled.h2`
 `
 
 const ExperienceItemWparrer = styled.div`
+    width: 100%;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -44,6 +45,12 @@ const ExperienceItemWparrer = styled.div`
 
     @media ${Theme.media.tablet} {
         flex-direction: column;
+        gap: 25px;
+    }
+
+    @media ${Theme.media.mobile} {
+        flex-direction: column;
+        gap: 25px;
     }
     
 `

@@ -41,6 +41,11 @@ const StyledInput = styled.input`
     color: ${Theme.colors.font};
     min-height: 30px;
     font-size: 16px;
+    
+    &:focus-visible {
+        outline: none;
+        border-bottom: 1px solid ${Theme.colors.accent};
+    }
 `
 
 const SubscribeButton = styled.button`

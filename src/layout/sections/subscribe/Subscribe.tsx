@@ -25,8 +25,8 @@ const StyledSubscribe = styled.section`
     align-items: center;
     background-color: ${Theme.colors.secondaryBg};
     
-    
     @media ${Theme.media.tablet} {
+        padding-top: 60px;
         ${FlexWrapper} {
             flex-direction: column;
             align-items: center;
@@ -34,6 +34,3 @@ const StyledSubscribe = styled.section`
         }
     }
 `
-
-
-

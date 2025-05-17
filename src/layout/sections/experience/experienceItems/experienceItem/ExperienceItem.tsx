@@ -20,7 +20,7 @@ const StyledExperienceItem = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 288px;
+    width: 100%;
     max-width: 288px;
     min-height: 295px;
     padding: 20px;
@@ -34,6 +34,13 @@ const StyledExperienceItem = styled.div`
         span {
             color: ${Theme.colors.font};
         }
+    }
+    
+    @media ${Theme.media.tablet} {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 45px 20px;
     }
 `
 

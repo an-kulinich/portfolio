@@ -6,7 +6,6 @@ import {Icon} from "../../../components/Icon/Icon";
 import {Theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
 
-
 export const Main = () => {
     return (
         <StyledMain>
@@ -50,12 +49,13 @@ const StyledMain = styled.section`
     background-position: 100% 50%;
     padding-top: 185px;
     padding-bottom: 135px;
-    
+
     @media ${Theme.media.mobile} {
         background-position: 100% -20%;
         background-size: 100% auto;
         min-height: 970px;
         align-items: flex-end;
+        padding-bottom: 70px;
     }
 `
 
@@ -75,7 +75,7 @@ const DescriptionWrapper = styled.div`
 const DescriptionText = styled.p`
     ${font({family: "'Poppins', sans serif", weight: 400, lineHeight: 180, Fmax: 20, Fmin: 16})};
     color: #a6a6a6;
-    
+
     span {
         color: ${Theme.colors.font};
     }

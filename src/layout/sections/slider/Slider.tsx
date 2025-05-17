@@ -23,6 +23,11 @@ const StyledSlider = styled.section`
     justify-content: center;
     align-items: center;
     background-color: ${Theme.colors.primaryBg};
+    
+    @media ${Theme.media.tablet} {
+        padding-top: 40px;
+        padding-bottom: 90px;
+    }
 `
 
 const SliderWrapper = styled.div`

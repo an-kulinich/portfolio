@@ -36,6 +36,10 @@ const StyledSlide = styled.div`
     @media screen and (max-width: 920px) {
         flex-direction: column;
     }
+    
+    @media ${Theme.media.tablet} {
+        gap: 25px;
+    }
 `
 
 const SlidePhoto = styled.img`
@@ -77,10 +81,12 @@ const SlideWrapper = styled.div`
     
     @media ${Theme.media.tablet} {
         padding: 0px;
+        gap: 20px;
     }
 `
 
 const LinkWrapper = styled.div`
     display: flex;
     padding: 10px;
+    
 `
