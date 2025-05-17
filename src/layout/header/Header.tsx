@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {Theme} from "../../styles/Theme";
 import {MobileMenu} from "./mobileMenu/MobileMenu";
+import {useState, useEffect} from 'react';
 
 const Items = [
     'Home',
@@ -12,8 +13,22 @@ const Items = [
 ]
 
 export const Header = () => {
+
+    const [scrolled, setScrolled] = useState(false);
+
+    const handleScroll = () => {
+        setScrolled(window.scrollY > 100);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <StyledHeader>
+        <StyledHeader scrolled={scrolled}>
             <Container>
                 <FlexWrapper justify="space-between" align={"center"}>
                     <Logo>Logo</Logo>
@@ -26,7 +41,7 @@ export const Header = () => {
     );
 };
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.header<{ scrolled: boolean }>`
     width: 100%;
     min-height: 65px;
     display: flex;
@@ -36,8 +51,9 @@ const StyledHeader = styled.header`
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(196, 196, 196, 0.3);
-
+    transition: background-color 0.3s ease;
+    background-color: ${(props) => (props.scrolled ? 'rgba(34,42,54,0.5)' : 'transparent')};
+    
     @media ${Theme.media.tablet} {
         background-color: rgba(196, 196, 196, 0);
     }
