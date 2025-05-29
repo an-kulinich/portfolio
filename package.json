@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-start",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": false,
   "homepage": "https://an-kulinich.github.io/portfolio",
@@ -66,7 +66,7 @@
     "workbox-webpack-plugin": "6.4.1"
   },
   "scripts": {
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
